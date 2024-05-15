@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_assign7_extra</title>
+</head>
+<body>
+    <script>
+alert("Welcome to the mobile phone recommendation tool!");
+alert("Please answer the following questions to help us recommend a suitable mobile phone for you.");
+
+let budget = prompt("What is your budget? (low, medium, high): ");
+let os = prompt("Which operating system do you prefer? (Android, iOS): ");
+let cameraQuality = prompt("What kind of camera quality do you prefer? (basic, moderate, high): ");
+let batteryLife = prompt("How important is battery life to you? (short, average, long): ");
+let screenSize = prompt("What screen size do you prefer? (small, medium, large): ");
+
+if (budget === "low") {
+    if (os === "Android") {
+        if (cameraQuality === "basic" && batteryLife === "short" && screenSize === "small") {
+            document.write("We recommend the Samsung Galaxy A01.");
+        } else if (cameraQuality === "moderate" && batteryLife === "average" && screenSize === "medium") {
+            document.write("We recommend the Xiaomi Redmi 9A.");
+        } else {
+            document.write("We recommend the Motorola Moto E6 Plus.");
+        }
+    } else if (os === "iOS") {
+        if (cameraQuality === "basic" && batteryLife === "short" && screenSize === "small") {
+            document.write("We recommend the iPhone SE (2020).");
+        } else if (cameraQuality === "moderate" && batteryLife === "average" && screenSize === "medium") {
+            document.write("We recommend the iPhone 7.");
+        } else {
+            document.write("We recommend the iPhone 6S.");
+        }
+    }
+} else if (budget === "medium") {
+    if (os === "Android") {
+        if (cameraQuality === "basic" && batteryLife === "short" && screenSize === "small") {
+            document.write("We recommend the Google Pixel 4a.");
+        } else if (cameraQuality === "moderate" && batteryLife === "average" && screenSize === "medium") {
+            document.write("We recommend the Xiaomi Redmi Note series.");
+        } else {
+            document.write("We recommend the Samsung Galaxy A52 5G.");
+        }
+    } else if (os === "iOS") {
+        if (cameraQuality === "basic" && batteryLife === "short" && screenSize === "small") {
+            document.write("We recommend the iPhone SE (1st Generation).");
+        } else if (cameraQuality === "moderate" && batteryLife === "average" && screenSize === "medium") {
+            document.write("We recommend the iPhone SE (2nd Generation)");
+        } else {
+            document.write("We recommend the iPhone SE (3rd generation).");
+        }
+    }
+} else {
+    if (os === "Android") {
+        if (cameraQuality === "basic" && batteryLife === "short" && screenSize === "small") {
+            document.write("We recommend the Sony Xperia 5 II.");
+        } else if (cameraQuality === "moderate" && batteryLife === "average" && screenSize === "medium") {
+            document.write("We recommend the Xiaomi Mi 11 Ultra.");
+        } else {
+            document.write("We recommend the Samsung Galaxy S series.");
+        }
+    } else if (os === "iOS") {
+        if (cameraQuality === "basic" && batteryLife === "short" && screenSize === "small") {
+            document.write("We recommend the iPhone SE (3rd generation).");
+        } else if (cameraQuality === "moderate" && batteryLife === "average" && screenSize === "medium") {
+            document.write("We recommend the iPhone 12 Pro.");
+        } else {
+            document.write("We recommend the iPhone 13 Pro Max.");
+        }
+    }
+}
+
+
+    </script>
+</body>
+</html>
